@@ -1,15 +1,15 @@
 export interface Speaker {
-  speak: (name?: string) => string;
+  speak: (name?: string) => string
 }
 
 export class PersonController implements Speaker {
-  age: number;
+  age: number
 
-  constructor(age: number) {
-    this.age = age;
+  constructor (age: number) {
+    this.age = age
   }
 
-  speak(name?: string): string {
-    return `Olá ${name?.toUpperCase() ?? "Fulano"}. Você tem ${this.age?.toString()}!!!`;
+  speak (name?: string): string {
+    return `Olá ${name?.toUpperCase() ?? 'Fulano'}. Você tem ${this.age?.toString()}!!!`
   }
 }
